@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Jeni Wahdani | E-CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <noscript
+      ><style>
+        .loader {
+          display: none;
+        }
+      </style></noscript
+    >
+    <script>
+      /* Dijalankan paling awal agar layar loading langsung tampil, dan dilewati jika pengguna memilih kurangi gerakan */
+      (function () {
+        var r = document.documentElement;
+        if (
+          window.matchMedia &&
+          matchMedia("(prefers-reduced-motion: reduce)").matches
+        )
+          r.classList.add("no-loader");
+        else r.classList.add("loading");
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="loader" id="loader" role="status">
+      <span class="sr">Memuat halaman</span>
+      <div class="ld-slash" aria-hidden="true"></div>
+      <div class="ld-body" aria-hidden="true">
+        <p class="ld-top">PLAYER 1</p>
+        <p class="ld-name">Jeni Wahdani</p>
+        <div class="ld-bar"><i id="ldFill"></i></div>
+        <p class="ld-row">
+          <span id="ldText">NOW LOADING</span><span id="ldPct">0%</span>
+        </p>
+      </div>
+      <p class="ld-call" id="ldCall" aria-hidden="true"></p>
+      <button class="ld-skip" id="ldSkip" type="button">Lewati</button>
+    </div>
+    <div class="prog" aria-hidden="true"><i id="hp"></i></div>
+
+    <header class="menu" id="menu">
+      <span class="brand">JW</span>
+      <nav class="nav" id="nav" aria-label="Bagian CV">
+        <span class="ind" id="ind" aria-hidden="true"></span>
+        <a href="#mulai" data-s="mulai">Mulai</a>
+        <a href="#tentang" data-s="tentang">Tentang Saya</a>
+        <a href="#riwayat" data-s="riwayat">Sekolah</a>
+        <a href="#bidang" data-s="bidang">Bidang</a>
+        <a href="#pengalaman" data-s="pengalaman">Pengalaman</a>
+        <a href="#proyek" data-s="proyek">Proyek</a>
+        <a href="#sertifikat" data-s="sertifikat">Sertifikat</a>
+        <a href="#kontak" data-s="kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="mulai" aria-labelledby="judul">
+        <div class="hero-in">
+          <div>
+            <p class="kicker">E-CV Jeni Wahdani - Rajadesa, Ciamis</p>
+            <h1 class="title" id="judul">
+              <span class="kin">Jeni</span><span class="kin">Wahdani</span>
+            </h1>
+            <p class="headline" id="headline" hidden></p>
+            <p class="sub">
+              Mahasiswa Semester 5 Program Studi Sistem Informasi di Universitas Bina Sarana Informatika, berfokus pada Pengembangan Web, Desain UI/UX, dan Teknologi Informasi.
+            </p>
+            <div class="cta">
+              <button class="btn" id="start" type="button">Mulai</button>
+              <a
+                class="btn btn-ghost"
+                data-cv
+                href="#"
+                download="CV-Jeni-Wahdani.pdf"
+                hidden
+                >Unduh CV (PDF)</a
+              >
+            </div>
+          </div>
+          <div
+            class="slot"
+            id="slot"
+            role="img"
+            aria-label="Tempat foto, belum diisi"
+          >
+            <div><b>JW</b><small>[FOTO] BELUM DIISI</small></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="band" aria-hidden="true">
+        <p data-f="-.35">
+          Tentang saya · Riwayat sekolah · Proyek · Sertifikat · Kontak ·
+          Tentang saya · Riwayat sekolah · Proyek · Sertifikat · Kontak
+        </p>
+      </div>
+
+      <section class="stage s-about" id="tentang" aria-labelledby="h-tentang">
+        <div class="wrap">
+          <div class="head rv">
+            <p class="tag">01</p>
+            <h2 id="h-tentang" class="kin">Tentang Saya</h2>
+          </div>
+          <div id="list-tentang"></div>
+        </div>
+      </section>
+
+      <section class="stage s-school" id="riwayat" aria-labelledby="h-riwayat">
+        <div class="wrap">
+          <div class="head rv">
+            <p class="tag">02</p>
+            <h2 id="h-riwayat" class="kin">Riwayat Sekolah</h2>
+          </div>
+          <div id="list-riwayat"></div>
+        </div>
+      </section>
+
+      <section class="stage s-skill" id="bidang" aria-labelledby="h-bidang">
+        <div class="wrap">
+          <div class="head rv">
+            <p class="tag">03</p>
+            <h2 id="h-bidang" class="kin">Bidang yang Dikuasai</h2>
+          </div>
+          <div id="list-bidang"></div>
+        </div>
+      </section>
+
+      <section
+        class="stage s-exp"
+        id="pengalaman"
+        aria-labelledby="h-pengalaman"
+      >
+        <div class="wrap">
+          <div class="head rv">
+            <p class="tag">04</p>
+            <h2 id="h-pengalaman" class="kin">Pengalaman</h2>
+          </div>
+          <div id="list-pengalaman"></div>
+        </div>
+      </section>
+
+      <section class="stage s-proj" id="proyek" aria-labelledby="h-proyek">
+        <div class="wrap">
+          <div class="head rv">
+            <p class="tag">05</p>
+            <h2 id="h-proyek" class="kin">Proyek</h2>
+          </div>
+          <div id="list-proyek"></div>
+        </div>
+      </section>
+
+      <div class="band" aria-hidden="true">
+        <p data-f=".3">
+          Jeni Wahdani · E-CV · Jeni Wahdani · E-CV · Jeni Wahdani · E-CV · Jeni
+          Wahdani · E-CV
+        </p>
+      </div>
+
+      <section
+        class="stage s-cert"
+        id="sertifikat"
+        aria-labelledby="h-sertifikat"
+      >
+        <div class="wrap">
+          <div class="head rv">
+            <p class="tag">06</p>
+            <h2 id="h-sertifikat" class="kin">Sertifikat</h2>
+          </div>
+          <div id="list-sertifikat"></div>
+        </div>
+      </section>
+
+      <section class="stage s-contact" id="kontak" aria-labelledby="h-kontak">
+        <div class="wrap">
+          <div class="head rv">
+            <p class="tag">07</p>
+            <h2 id="h-kontak" class="kin">Kontak Saya</h2>
+          </div>
+          <div class="contact-grid">
+            <div>
+              <div id="list-kontak"></div>
+              <a
+                class="btn btn-ghost cv-contact"
+                data-cv
+                href="#"
+                download="CV-Jeni-Wahdani.pdf"
+                hidden
+                >Unduh CV (PDF)</a
+              >
+            </div>
+            <div class="collab rv" id="collab">
+              <h3 class="collab-t">
+                Ajak saya berkolaborasi atau bekerja sama
+              </h3>
+              <form class="wa-form" id="waForm" novalidate>
+                <label
+                  >Nama Anda
+                  <input name="nama" type="text" autocomplete="name" required />
+                </label>
+                <label
+                  >Keperluan
+                  <select name="keperluan">
+                    <option>Kolaborasi</option>
+                    <option>Pekerjaan</option>
+                    <option>Lainnya</option>
+                  </select>
+                </label>
+                <label
+                  >Pesan
+                  <textarea name="pesan" rows="4" required></textarea>
+                </label>
+                <p class="wa-err" id="waErr" role="alert"></p>
+                <button class="btn" type="submit">Kirim lewat WhatsApp</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>JENI WAHDANI · E-CV · 2026</footer>
+
+    <div class="banner" id="banner" role="status" hidden>
+      <span id="bannerText"></span>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

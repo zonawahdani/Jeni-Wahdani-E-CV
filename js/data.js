@@ -171,7 +171,7 @@ const DATA = {
       penerbit: "Universitas Bina Sarana Informatika",
       tahun: "2025",
       pdf: "assets/Sertifikat Indonesia Cerdas Fest 2025.pdf",
-      gambar: "assets/Cerdas fest.png",
+      gambar: "assets/Cerdas Fest.png",
       link: "https://drive.google.com/file/d/19OZeXXyYVDMtGZiIhBpAO5HOYR3Llmp7/view?usp=sharing",
     },
     {
@@ -187,7 +187,7 @@ const DATA = {
       penerbit: "Universitas Bina Sarana Informatika",
       tahun: "2026",
       pdf: "assets/Sertifikat Panitia Seminar Jeni Wahdani - 2026.pdf",
-      gambar: "assets/panitia.png",
+      gambar: "assets/Panitia.png",
       link: "https://drive.google.com/file/d/1ZbJhc8t54Tt-AbD2N6VBdsP5tajex9tW/view?usp=sharing",
     },
     {

@@ -1,41 +1,3 @@
-/* ===== DATA E-CV: ISI FILE INI SAJA =====
-   Bagian yang masih kosong ([] atau "") tampil sebagai "SLOT KOSONG" atau disembunyikan sampai kamu mengisinya.
-   Tambah satu entri dengan menyalin satu blok { ... } lalu beri koma di antaranya.
-
-   foto           : alamat foto profil, contoh "assets/foto.jpg"
-   whatsapp       : nomor WhatsApp dengan kode negara, contoh "6281234567890" (angka 0 di depan otomatis menjadi 62)
-                    dipakai untuk form "Ajak saya berkolaborasi". Pengunjung mengisi nama, keperluan, dan pesan, lalu WhatsApp terbuka dengan pesan terisi
-   cv             : alamat file CV PDF, contoh "assets/cv-jeni-wahdani.pdf". Tombol "Unduh CV" hanya muncul jika diisi
-   headline       : satu kalimat ringkasan profil, tampil di halaman depan
-   tentang        : deskripsi diri, pisahkan paragraf dengan baris kosong (\n\n)
-   minat          : ["", ""]
-   keahlianUtama  : ["", ""]
-   tujuanKarier   : teks singkat
-   sekolah        : { nama:"nama institusi", prodi:"program studi", tahun:"", catatan:"" }
-   bidang         : { nama:"", nilai:80, keterangan:"", tipe:"hard" }
-                    tipe "hard" (kemampuan teknis) tampil sebagai diagram batang, nilai 0 sampai 100 (kosongkan jika belum dinilai)
-                    tipe "soft" (nonteknis) tampil sebagai kata besar tanpa angka
-   pengalaman     : { posisi:"", organisasi:"", jenis:"Organisasi", periode:"2024 - 2025", deskripsi:"" }
-                    jenis: Organisasi, Kepanitiaan, Magang, Pekerjaan, atau Kegiatan akademik
-   proyek         : { judul:"", peran:"", tahun:"", deskripsi:"", kontribusi:"", teknologi:["",""], link:"https://...", gambar:"assets/proyek1.jpg" }
-                    isi minimal dua proyek
-   sertifikat     : { judul:"", penerbit:"", tahun:"", pdf:"assets/sertifikat1.pdf", gambar:"assets/sertifikat1.jpg", link:"https://..." }
-                    pdf: file PDF sertifikat di folder assets. Tombol "Lihat PDF" membuka pratinjau di komputer dan tab baru di HP,
-                    tombol "Unduh" mengunduh filenya. gambar (opsional) hanya pratinjau kecil di kartu.
-   kontak         : { label:"Email", nilai:"nama@email.com", href:"mailto:nama@email.com" }
-                    contoh lain: LinkedIn, GitHub, Instagram (href berisi alamat profilnya)
-
-   gambar dan link boleh dikosongkan. Simpan file gambar di folder assets, lalu tulis alamatnya sama persis dengan nama filenya.
-
-   Contoh:
-   pengalaman: [
-     { posisi:"Anggota Divisi Acara", organisasi:"Nama Organisasi", jenis:"Kepanitiaan", periode:"2025", deskripsi:"Tugas singkat." }
-   ],
-   bidang: [
-     { nama:"HTML dan CSS", tipe:"hard" },
-     { nama:"Kerja tim", keterangan:"Contoh singkat", tipe:"soft" }
-   ]
-*/
 const DATA = {
   foto: "assets/foto.jpeg",
   whatsapp: "https://wa.me/089624439070",
@@ -251,7 +213,7 @@ const DATA = {
       tahun: "2026",
       pdf: " assets/BSI Entrepreneur Center - 2026.pdf",
       gambar: "assets/bsi entre.png",
-      link: "https://drive.google.com/file/d/1GyXkdvOLcYURpLLL-654AqPvGbgT_dHA/view?usp=sharing"
+      link: "https://drive.google.com/file/d/1GyXkdvOLcYURpLLL-654AqPvGbgT_dHA/view?usp=sharing",
     },
   ],
   kontak: [

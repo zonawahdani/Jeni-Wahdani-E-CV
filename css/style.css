@@ -1,6 +1,3 @@
-/* Arah visual: video tipografi gelap. Huruf besar adalah gambar utamanya, bergerak per huruf dan mengikuti scroll.
-   Archivo dipilih karena lebar dan beratnya bisa diatur (sempit dan tebal untuk judul, normal untuk bacaan).
-   Kaca hanya dipakai di bilah menu, satu-satunya elemen yang melayang di atas konten. */
 :root {
   --bg: #07070a;
   --bg2: #101017;
